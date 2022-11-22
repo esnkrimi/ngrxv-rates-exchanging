@@ -1,0 +1,19 @@
+<div class="d-flex">
+  <div class="col-md-6">
+    <div class="row w-25">
+      <button
+        class="btn btn-primary m-1"
+        *ngFor="let item of coinSet"
+        (click)="dispatch(item)"
+      >
+        {{ item }}
+      </button>
+    </div>
+  </div>
+  <div class="col-md-6">
+    <div class="text-center text-large">
+      <img [src]="finish" />
+    </div>
+    <div class="text-center text-large">PRICE: {{ price }}</div>
+  </div>
+</div>
